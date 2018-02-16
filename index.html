@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="sk">
+
+<head>
+<title>Web Api Request</title>
+<meta charset="utf-8">	
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+   
+    <div class="row">
+        <div class="col-md-3">  </div>
+            
+        <div class="col-md-6" id="form">
+  
+            <div id="title_header"><h1>Avengers</h1></div>
+              
+            <select name="" id="hero">
+               
+            </select>
+            <br>
+           Civil Surrname:   
+           <div id="civil"></div> 
+           <br>
+           Salary:   
+            <div id="salary"></div>   
+           
+        </div>
+            
+            <div class="col-md-3"> </div>
+         
+    </div>
+</div>
+
+
+
+<script>
+//function startGen(){
+$(window).on('load',function () {    
+    
+    $.ajax({
+            
+    type:'GET',       
+    url:'http://localhost:8080/heroes/supername',
+    data: {},   
+    success: showHeroes,
+    crossDomain:true,
+    dataType:'jsonp',
+    jsonCallback:'showHeroes',
+    contntType: 'application/json',
+    error:function(){
+    console.log('Err!');                     
+         }
+        });
+    
+    });
+                 
+    function showHeroes(data){
+    
+    data.name.forEach(function(element) {
+    $('#hero').append( '<option value="'+element+'">'+element+'</option>' );
+          });
+    }
+    
+    
+ $('#hero').on('change',function(){
+   $.ajax({
+            
+    type:'GET',       
+       url:'http://localhost:8080/heroes/civil/'+$(this).val(),
+    data: {},       
+    success: showCivilSurrname,
+    crossDomain:true,
+    dataType:'jsonp',
+    jsonCallback:'showCivilSurrname',
+    contntType: 'application/json',
+    error:function(){
+    console.log('Err!');
+    
+         }
+    });
+    
+}); 
+    
+    function showCivilSurrname(data){
+    console.log(data);
+        
+    $('#civil').empty();
+    $('#civil').append(data.name);        
+   
+    }
+    
+    $('#hero').on('change',function(){
+      $.ajax({
+            
+    type:'GET',       
+       url:'http://localhost:8080/heroes/salary/'+$(this).val(),
+    data: {},       
+    success: showSalary,
+    crossDomain:true,
+    dataType:'jsonp',
+    jsonCallback:'showSalary',
+    contntType: 'application/json',
+    error:function(){
+    console.log('Err!');
+    
+         }
+    });
+    
+}); 
+    
+    function showSalary(data){
+    console.log(data);
+        
+    $('#salary').empty();
+    $('#salary').append(data.name);        
+   
+    }  
+   
+  
+    
+        
+</script>
+
+</body>
+</html>

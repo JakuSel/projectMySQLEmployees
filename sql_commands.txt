@@ -1,0 +1,139 @@
+//Employees
+//Black Panther
+Insert into employees (emp_no, birth_date, first_name, last_name, gender, hire_date, hero_name)
+values ('1','1966-05-02','Ti','Challa','M','2016-05-05','Black Panther');
+
+//Black Widow
+Insert into employees (emp_no, birth_date, first_name, last_name, gender, hire_date, hero_name)
+values ('2','1972-08-08','Natasha ','Romanova','F','2016-05-05','Black Widow');
+
+//Cpt America
+Insert into employees (emp_no, birth_date, first_name, last_name, gender, hire_date, hero_name)
+values ('3','1981-05-25','Steven ','Rogers','M','2016-05-05','Captain America');
+
+//Captain Marvel
+Insert into employees (emp_no, birth_date, first_name, last_name, gender, hire_date, hero_name)
+values ('4','1967-03-01','Carol ','Danvers','F','2016-05-05','Captain Marvel');
+
+//Falcon
+Insert into employees (emp_no, birth_date, first_name, last_name, gender, hire_date, hero_name)
+values ('5','1969-11-07','Samuel ','Wilson','M','2016-05-05','Falcon');
+
+//Hank Pym
+Insert into employees (emp_no, birth_date, first_name, last_name, gender, hire_date, hero_name)
+values ('6','1962-07-02','Henry ','Pym','M','2016-05-05','Hank Pym');
+
+//Hawkeye
+Insert into employees (emp_no, birth_date, first_name, last_name, gender, hire_date, hero_name)
+values ('7','1965-09-01','Clinton ','Barton','M','2016-05-05','Hawkeye');
+
+//Hulk
+Insert into employees (emp_no, birth_date, first_name, last_name, gender, hire_date, hero_name)
+values ('8','1962-01-05','Robert ','Banner','M','2016-05-05','Hulk');
+
+//Iron Man
+Insert into employees (emp_no, birth_date, first_name, last_name, gender, hire_date, hero_name)
+values ('9','1963-09-03','Anthony ','Stark','M','2016-05-05','Iron Man');
+
+//Luke Cage
+Insert into employees (emp_no, birth_date, first_name, last_name, gender, hire_date, hero_name)
+values ('10','1972-06-01','Carl ','Lucas','M','2016-05-05','Luke Cage');
+
+//Quicksilver
+Insert into employees (emp_no, birth_date, first_name, last_name, gender, hire_date, hero_name)
+values ('11','1964-04-28','Pietro ','Maximoff','M','2016-05-05','Quicksilver');
+
+//Scarlet Witch
+Insert into employees (emp_no, birth_date, first_name, last_name, gender, hire_date, hero_name)
+values ('12','1964-07-18','Robert ','Banner','F','2016-05-05','Scarlet Witch');
+
+//Spider-Woman
+Insert into employees (emp_no, birth_date, first_name, last_name, gender, hire_date, hero_name)
+values ('13','1977-03-02','Jessica ','Drew','F','2016-05-05','Spider-Woman');
+
+//Thor
+Insert into employees (emp_no, birth_date, first_name, last_name, gender, hire_date, hero_name)
+values ('14','1951-08-03','Thor ','Odinson','M','2016-05-05','Thor');
+
+//Vision
+Insert into employees (emp_no, birth_date, first_name, last_name, gender, hire_date, hero_name)
+values ('15','1940-01-03','Jarvis ','Vision','M','2016-05-05','Vision');
+
+//Wasp
+Insert into employees (emp_no, birth_date, first_name, last_name, gender, hire_date, hero_name)
+values ('16','1963-04-04','Janet ','Dyne','F','2016-05-05','Wasp');
+
+//Wonder Man
+Insert into employees (emp_no, birth_date, first_name, last_name, gender, hire_date, hero_name)
+values ('17','1964-06-09','Simon ','Williams','M','2016-05-05','Wonder Man');
+
+
+
+//Salaries
+//1
+Insert into salaries (emp_no, salary, from_date, to_date)
+values ('1','2500','2018-01-01', '2018-02-01');
+
+//2
+Insert into salaries (emp_no, salary, from_date, to_date)
+values ('2','2236','2018-01-01', '2018-02-01');
+
+//3
+Insert into salaries (emp_no, salary, from_date, to_date)
+values ('3','3680','2018-01-01', '2018-02-01');
+
+//4
+Insert into salaries (emp_no, salary, from_date, to_date)
+values ('4','2120','2018-01-01', '2018-02-01');
+
+//5
+Insert into salaries (emp_no, salary, from_date, to_date)
+values ('5','2150','2018-01-01', '2018-02-01');
+
+//6
+Insert into salaries (emp_no, salary, from_date, to_date)
+values ('6','2970','2018-01-01', '2018-02-01');
+
+//7
+Insert into salaries (emp_no, salary, from_date, to_date)
+values ('7','4025','2018-01-01', '2018-02-01');
+
+//8
+Insert into salaries (emp_no, salary, from_date, to_date)
+values ('8','4570','2018-01-01', '2018-02-01');
+
+//9
+Insert into salaries (emp_no, salary, from_date, to_date)
+values ('9','7520','2018-01-01', '2018-02-01');
+
+//10
+Insert into salaries (emp_no, salary, from_date, to_date)
+values ('10','2865','2018-01-01', '2018-02-01');
+
+//11
+Insert into salaries (emp_no, salary, from_date, to_date)
+values ('11','3305','2018-01-01', '2018-02-01');
+
+//12
+Insert into salaries (emp_no, salary, from_date, to_date)
+values ('12','3570','2018-01-01', '2018-02-01');
+
+//13
+Insert into salaries (emp_no, salary, from_date, to_date)
+values ('13','2565','2018-01-01', '2018-02-01');
+
+//14
+Insert into salaries (emp_no, salary, from_date, to_date)
+values ('14','6540','2018-01-01', '2018-02-01');
+
+//15
+Insert into salaries (emp_no, salary, from_date, to_date)
+values ('15','9655','2018-01-01', '2018-02-01');
+
+//16
+Insert into salaries (emp_no, salary, from_date, to_date)
+values ('16','2560','2018-01-01', '2018-02-01');
+
+//17
+Insert into salaries (emp_no, salary, from_date, to_date)
+values ('17','3050','2018-01-01', '2018-02-01');
